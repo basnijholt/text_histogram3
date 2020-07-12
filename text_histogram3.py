@@ -73,12 +73,12 @@ def test_mvsd():
 def median(values):
     length = len(values)
     if length % 2:
-        median_indeces = [length / 2]
+        median_indices = [length // 2]
     else:
-        median_indeces = [length / 2 - 1, length / 2]
+        median_indices = [length // 2 - 1, length // 2]
 
     values = sorted(values)
-    return sum([values[i] for i in median_indeces]) / len(median_indeces)
+    return sum([values[i] for i in median_indices]) / len(median_indices)
 
 
 def test_median():
@@ -195,5 +195,5 @@ def histogram(  # noqa: C901
             star_count = bucket_count / bucket_scale
         print(
             "%10.4f - %10.4f [%6d]: %s"
-            % (bucket_min, bucket_max, bucket_count, "∎" * star_count)
+            % (bucket_min, bucket_max, bucket_count, "∎" * int(star_count))
         )
