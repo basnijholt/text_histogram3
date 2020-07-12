@@ -1,5 +1,5 @@
-text_histogram
-==============
+text_histogram3
+===============
 
 |version| |downloads|
 
@@ -14,7 +14,7 @@ repackaged for convenient script use.
 
 ::
 
-    >>> from text_histogram import histogram
+    >>> from text_histogram3 import histogram
     >>> import random
     >>> histogram([random.gauss(50, 20) for _ in xrange(100)])
     # NumSamples = 100; Min = 1.42; Max = 87.36
@@ -37,15 +37,15 @@ Installation
 
 .. code:: bash
 
-    $ pip install text_histogram
+    $ pip install text_histogram3
 
 
-Source: https://github.com/Kobold/text_histogram
+Source: https://github.com/basnijholt/text_histogram3
 
 
-.. |downloads| image:: https://pypip.in/d/text_histogram/badge.png
-   :target: https://pypi.python.org/pypi/text_histogram
+.. |downloads| image:: https://pypip.in/d/text_histogram3/badge.png
+   :target: https://pypi.python.org/pypi/text_histogram3
    :alt: Number of PyPI downloads
-.. |version| image:: https://badge.fury.io/py/text_histogram.png
-   :target: http://badge.fury.io/py/text_histogram
+.. |version| image:: https://badge.fury.io/py/text_histogram3.png
+   :target: http://badge.fury.io/py/text_histogram3
    :alt: PyPI version
